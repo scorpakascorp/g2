@@ -1,0 +1,14 @@
+#!/bin/bash
+
+res=$(rofi -lines 10 -font "Ubuntu Mono 12" -hide-scrollbar -width -10 -location 3 -i -dmenu < ~/.i3/exit_res)
+
+if [ $res = "Logout" ]; then
+    i3-msg exit
+fi
+if [ $res = "Restart" ]; then
+    sudo reboot
+fi
+if [ $res = "Shutdown" ]; then
+    sudo poweroff
+fi
+exit 0

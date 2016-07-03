@@ -1,0 +1,1 @@
+echo $(amixer get Master |grep % |awk '{print $6}'|sed -e 's/\[//' -e 's/\]//'|tail -1)
