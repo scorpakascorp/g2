@@ -1,0 +1,43 @@
+media-libs/imlib2 X gif jpeg png tiff
+x11-terms/rxvt-unicode xft 256-color
+
+
+net-misc/iputils -caps -filecaps
+# required by x11-drivers/xf86-video-vmware-13.1.0::gentoo
+# required by x11-base/xorg-drivers-1.17::gentoo[video_cards_vmware]
+# required by x11-base/xorg-server-1.17.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.9.2::gentoo
+>=media-libs/mesa-11.0.6 xa
+# required by x11-drivers/xf86-video-vmware-13.1.0::gentoo
+# required by x11-base/xorg-drivers-1.17::gentoo[video_cards_vmware]
+# required by x11-base/xorg-server-1.17.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.9.2::gentoo
+>=x11-libs/libdrm-2.4.65 libkms
+# required by x11-wm/i3-4.10.4::gentoo[pango]
+# required by i3 (argument)
+>=x11-libs/pango-1.38.1 X
+# required by x11-libs/pango-1.38.1::gentoo
+# required by x11-wm/i3-4.10.4::gentoo[pango]
+# required by i3 (argument)
+>=x11-libs/cairo-1.14.6 xcb X
+# required by x11-libs/libxkbcommon-0.5.0::gentoo[X]
+# required by x11-wm/i3-4.10.4::gentoo
+# required by i3 (argument)
+>=x11-libs/libxcb-1.11.1 xkb
+# required by x11-wm/i3-4.10.4::gentoo
+# required by i3 (argument)
+>=x11-libs/libxkbcommon-0.5.0 X
+# required by www-client/chromium-51.0.2704.103::gentoo
+# required by chromium (argument)
+>=media-libs/harfbuzz-1.2.7 icu
+# required by www-client/chromium-51.0.2704.103::gentoo
+# required by chromium (argument)
+>=sys-libs/zlib-1.2.8-r1 minizip
+# required by www-client/chromium-51.0.2704.103::gentoo
+# required by chromium (argument)
+>=dev-libs/libxml2-2.9.4 icu
+# required by x11-libs/gtk+-2.24.30::gentoo
+# required by www-client/google-chrome-51.0.2704.106::gentoo
+# required by google-chrome (argument)
+>=x11-libs/gdk-pixbuf-2.32.3 X
+app-portage/layman git subversion

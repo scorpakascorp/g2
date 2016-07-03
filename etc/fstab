@@ -1,0 +1,5 @@
+# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
+/dev/sda1		/boot/efi		vfat		noauto,noatime	1 2
+/dev/sda2		/			ext4		noatime		0 1
+/dev/sda3		/home			ext4		noatime		0 1

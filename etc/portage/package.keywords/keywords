@@ -1,0 +1,5 @@
+=www-client/google-chrome-51.0.2704.106 ~amd64
+=x11-libs/xcb-util-xrm-1.0 ~amd64
+=x11-wm/i3-9999 **
+=x11-misc/rofi-1.1.0 ~amd64
+sys-kernel/gentoo-sources ~amd64
