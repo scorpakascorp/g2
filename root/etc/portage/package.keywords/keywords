@@ -3,3 +3,4 @@
 =x11-wm/i3-9999 **
 =x11-misc/rofi-1.1.0 ~amd64
 sys-kernel/gentoo-sources ~amd64
+app-misc/screenfetch ~amd64
