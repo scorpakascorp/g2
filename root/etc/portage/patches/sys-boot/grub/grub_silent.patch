@@ -1,0 +1,90 @@
+--- a/grub-core/kern/main.c	2013-12-24 18:29:27.000000000 +0200
++++ b/grub-core/kern/main.c	2016-07-11 10:15:43.949930689 +0300
+@@ -270,9 +270,11 @@ grub_main (void)
+   grub_boot_time ("After machine init.");
+ 
+   /* Hello.  */
++  /*
+   grub_setcolorstate (GRUB_TERM_COLOR_HIGHLIGHT);
+   grub_printf ("Welcome to GRUB!\n\n");
+   grub_setcolorstate (GRUB_TERM_COLOR_STANDARD);
++  */
+ 
+   grub_load_config ();
+ 
+--- a/grub-core/normal/menu.c	2013-12-24 18:29:27.000000000 +0200
++++ b/grub-core/normal/menu.c	2016-07-11 10:11:44.459933369 +0300
+@@ -810,9 +810,9 @@ static void
+ notify_booting (grub_menu_entry_t entry,
+ 		void *userdata __attribute__((unused)))
+ {
+-  grub_printf ("  ");
++  /*grub_printf ("  ");
+   grub_printf_ (N_("Booting `%s'"), entry->title);
+-  grub_printf ("\n\n");
++  grub_printf ("\n\n");*/
+ }
+ 
+ /* Callback invoked when a default menu entry executed because of a timeout
+
+--- a/util/grub.d/10_linux.in	2013-12-24 18:45:34.000000000 +0200
++++ b/util/grub.d/10_linux.in	2016-07-11 10:09:10.379935093 +0300
+@@ -126,16 +126,11 @@ linux_entry ()
+     fi
+     printf '%s\n' "${prepare_boot_cache}" | sed "s/^/$submenu_indentation/"
+   fi
+-  message="$(gettext_printf "Loading Linux %s ..." ${version})"
+   sed "s/^/$submenu_indentation/" << EOF
+-	echo	'$(echo "$message" | grub_quote)'
+ 	linux	${rel_dirname}/${basename} root=${linux_root_device_thisversion} ro ${args}
+ EOF
+   if test -n "${initrd}" ; then
+-    # TRANSLATORS: ramdisk isn't identifier. Should be translated.
+-    message="$(gettext_printf "Loading initial ramdisk ...")"
+     sed "s/^/$submenu_indentation/" << EOF
+-	echo	'$(echo "$message" | grub_quote)'
+ 	initrd	${rel_dirname}/${initrd}
+ EOF
+   fi
+
+--- a/grub-core/boot/i386/pc/boot.S	2013-12-24 17:55:17.000000000 +0200
++++ b/grub-2.02~beta2/grub-core/boot/i386/pc/boot.S	2016-07-12 08:22:46.139997451 +0300
+@@ -250,7 +250,7 @@
+ 	pushw	%dx
+ 
+ 	/* print a notification message on the screen */
+-	MSG(notification_string)
++	/* MSG(notification_string) */
+ 
+ 	/* set %si to the disk address packet */
+ 	movw	$disk_address_packet, %si
+
+--- a/grub-core/boot/i386/pc/diskboot.S	2013-12-24 17:55:17.000000000 +0200
++++ b/grub-core/boot/i386/pc/diskboot.S	2016-07-12 08:22:18.659997730 +0300
+@@ -52,7 +52,7 @@
+ 
+ 	/* print a notification message on the screen */
+ 	pushw	%si
+-	MSG(notification_string)
++	/* MSG(notification_string) */
+ 	popw	%si
+ 
+ 	/* this sets up for the first run through "bootloop" */
+@@ -279,7 +279,7 @@
+ 	/* restore addressing regs and print a dot with correct DS
+ 	   (MSG modifies SI, which is saved, and unused AX and BX) */
+ 	popw	%ds
+-	MSG(notification_step)
++	/* MSG(notification_step) */
+ 	popa
+ 
+ 	/* check if finished with this dataset */
+@@ -296,7 +296,7 @@
+ 
+ LOCAL(bootit):
+ 	/* print a newline */
+-	MSG(notification_done)
++	/* MSG(notification_done) */
+ 	popw	%dx	/* this makes sure %dl is our "boot" drive */
+ 	ljmp	$0, $(GRUB_BOOT_MACHINE_KERNEL_ADDR + 0x200)
+ 
