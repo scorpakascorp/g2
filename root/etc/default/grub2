@@ -1,0 +1,10 @@
+GRUB_DISTRIBUTOR="Gentoo"
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=2
+GRUB_TIMEOUT_STYLE=hidden
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 rootfstype=ext4 real_init=/usr/lib/systemd/systemd show_status=0 rd.systemd.show_status=false rd.udev.log-priority=3"
+
+GRUB_GFXMODE=1920x1080
+GRUB_GFXPAYLOAD_LINUX=keep
