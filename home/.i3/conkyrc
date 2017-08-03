@@ -54,10 +54,10 @@ TEXT
         "full_text" : " ${fs_used /} [${fs_used_perc /}%]",
         "color"     : ${if_match ${fs_used_perc /}>90}"\#ff0000"${else}"\#88ABC4"${endif}
     },
-    {
-        "full_text" : " ${uptime_short}",
-        "color"     : "\#88ABC4"
-    },
+#    {
+#        "full_text" : " ${uptime_short}",
+#        "color"     : "\#88ABC4"
+#    },
     {
         "full_text" : " ${downspeedf eno16777736}kb/s",
         "color"     : "\#88ABC4"
@@ -67,7 +67,7 @@ TEXT
         "color"     : "\#88ABC4"
     },
     {
-        "full_text" : "${if_match "${exec $HOME/.i3/mixer_status}" == "on"} ${exec amixer get Master -M | grep -oP '\d*%' | head -n1}${else} mute${endif}",
+        "full_text" : "${if_match "${exec $HOME/.i3/mixer_status}" == "on"} ${exec $HOME/.i3/mixer_volume}${else} mute${endif}",
         "color"     : "\#88ABC4"
     },
     {
