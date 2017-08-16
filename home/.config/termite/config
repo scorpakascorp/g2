@@ -1,0 +1,76 @@
+[options]
+allow_bold = false
+#audible_bell = false
+#clickable_url = true
+#dynamic_title = true
+font = Ubuntu Mono 12
+#fullscreen = true
+#geometry = 640x480
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+[colors]
+foreground = #FFFFFF
+foreground_bold = #FFFFFF
+#foreground_dim = #888888
+background = #242424
+cursor = #93a1a1
+
+# if unset, will reverse foreground and background
+highlight = #839496
+
+# Colors from color0 to color254 can be set
+color0 = #000000
+color1 = #C75646
+color2 = #8EB33B
+color3 = #D0B03C
+color4 = #4E90A7
+color5 = #C8A0D1
+color6 = #218693
+color7 = #B0B0B0
+color8 = #5D5D5D
+color9 = #E09690
+color10 = #CDEE69
+color11 = #FFE377
+color12 = #9CD9F0
+color13 = #FBB1F9
+color14 = #77DFD8
+color15 = #F7F7F7
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
