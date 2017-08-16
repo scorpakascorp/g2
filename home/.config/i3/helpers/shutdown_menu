@@ -1,0 +1,14 @@
+#!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+res=$(rofi -lines 3 -font "Ubuntu Mono 12" -hide-scrollbar -width -14 -location 3 -i -dmenu < $DIR/exit_res | sed "s/[^[:alnum:]]\+//g")
+
+if [ $res = "Logout" ]; then
+    i3-msg exit
+fi
+if [ $res = "Restart" ]; then
+    sudo reboot
+fi
+if [ $res = "Shutdown" ]; then
+    sudo poweroff
+fi
+exit 0

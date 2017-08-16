@@ -1,0 +1,5 @@
+case "$(xset -q|grep LED| awk '{ print $10 }')" in
+  "00000000") echo "EN" ;;
+  "00001004") echo "RU" ;;
+  *) echo "unknown" ;;
+esac
