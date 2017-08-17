@@ -11,7 +11,7 @@ http://fontawesome.io/cheatsheet/
 parts = {}
 
 -- user variables
-local wlandev = 'wlp0s3f3u2'
+local wlandev = 'wls35u1'
 
 -- shortcut
 local _h = jsonhelper
@@ -35,7 +35,7 @@ local ci = color_indicator_dark
 parts.time = _h.common('', nil, '${time %H:%M }')
 
 -- Date
-parts.date = _h.common('', nil, '${time %D}')
+parts.date = _h.common('', nil, '${time %A %d %b}')
 
 -- Volume
 local volume_command = [[amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g']]
@@ -97,7 +97,7 @@ ${endif}${endif}${endif}
 ]]
 
 -- Download
-parts.download = _h.common(' ', 'DOWN') .. [[,
+parts.download = _h.common('', 'DOWN') .. [[,
 ${if_match ${downspeedf ]] .. wlandev .. [[}<1000}
     ]] .. _h.value('${downspeed ' .. wlandev .. '}', ci.good) .. [[
 ${else}${if_match ${downspeedf ]] .. wlandev .. [[}<3000}
