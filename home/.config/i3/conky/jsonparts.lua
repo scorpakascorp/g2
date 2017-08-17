@@ -35,7 +35,7 @@ local ci = color_indicator_dark
 parts.time = _h.common('', nil, '${time %H:%M }')
 
 -- Date
-parts.date = _h.common('', nil, '${time %A %d %b}')
+parts.date = _h.common('', nil, '${time %a, %B %d}')
 
 -- Volume
 local volume_command = [[amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g']]
