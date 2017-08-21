@@ -13,6 +13,7 @@ enabled = ''
 --    .. parts.cputemp .. ',' 
     .. parts.download .. ','
     .. parts.upload .. ','
+    .. parts.language .. ','
     .. parts.memory .. ','
     .. parts.cpu0
 --    .. parts.battery

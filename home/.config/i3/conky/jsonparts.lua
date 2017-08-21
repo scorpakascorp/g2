@@ -11,7 +11,7 @@ http://fontawesome.io/cheatsheet/
 parts = {}
 
 -- user variables
-local wlandev = 'wls35u1'
+local wlandev = 'eno16777736'
 
 -- shortcut
 local _h = jsonhelper
@@ -33,6 +33,10 @@ local ci = color_indicator_dark
 
 -- Time
 parts.time = _h.common('', nil, '${time %H:%M }')
+
+-- Language
+local lang_command = [[~/.config/i3/helpers/kbdlayout]]
+parts.language = _h.common('', nil, "${execi 1 " .. lang_command .. "}")
 
 -- Date
 parts.date = _h.common('', nil, '${time %a, %B %d}')
