@@ -11,10 +11,14 @@ dofile(home .. '/.config/i3/conky/' .. 'jsonparts.lua')
 
 enabled = ''
 --  .. parts.mpd .. ','
+--    .. parts.cputemp .. ',' 
+    .. parts.download .. ','
+    .. parts.upload .. ','
     .. parts.mem .. ','
+    .. parts.cpu0 .. ','
     .. parts.uptime .. ','
     .. parts.host .. ','
-    .. parts.volume .. ','
+--    .. parts.memory .. ','
     .. parts.machine
 --    .. jsonhelper.separator()
 

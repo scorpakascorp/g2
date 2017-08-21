@@ -10,12 +10,8 @@ dofile(home .. '/.config/i3/conky/' .. 'jsonhelper.lua')
 dofile(home .. '/.config/i3/conky/' .. 'jsonparts.lua')
 
 enabled = ''
---    .. parts.cputemp .. ',' 
-    .. parts.download .. ','
-    .. parts.upload .. ','
     .. parts.language .. ','
-    .. parts.memory .. ','
-    .. parts.cpu0
+    .. parts.volume
 --    .. parts.battery
   
 conky.text = [[ 

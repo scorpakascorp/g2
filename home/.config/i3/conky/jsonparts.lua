@@ -42,7 +42,10 @@ parts.language = _h.common('', nil, "${execi 1 " .. lang_command .. "}")
 parts.date = _h.common('', nil, '${time %a, %B %d}')
 
 -- Volume
-local volume_command = [[amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g']]
+-- local volume_command = [[amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ 
+-- /g']]
+local volume_command = [[~/.config/i3/helpers/mixer_volume]]
+
 parts.volume = _h.common('', 'VOL', "${execi 1 " .. volume_command .. "}")
 
 -- Host
