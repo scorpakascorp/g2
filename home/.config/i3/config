@@ -9,7 +9,8 @@ bindsym $mod+Return exec --no-startup-id termite
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show drun -lines 10 -font "Ubuntu Mono 12" -hide-scrollbar -width -30
+bindsym $mod+d exec rofi -show drun -lines 10 -font "Ubuntu Mono 12" -hide-scrollbar -width -50
+
 
 # list open windows to switch to
 bindsym $mod+Tab exec rofi -show window -lines 10 -font "Ubuntu Mono 12" -hide-scrollbar -width -80
