@@ -127,12 +127,12 @@ ${endif}${endif}${endif}
 
 -- Memory
 parts.memory = _h.common('', 'MEM') .. [[,
-${if_match ${memperc}<30}
-    ]] .. _h.value('${memeasyfree}', ci.good) .. [[
-${else}${if_match ${memperc}<70}
-    ]] .. _h.value('${memeasyfree}',ci.degraded) .. [[
-${else}${if_match ${memperc}>=70}
-    ]] .. _h.value('${memeasyfree}', ci.bad) .. [[
+${if_match ${memperc}<60}
+    ]] .. _h.value('${memperc}%', ci.good) .. [[
+${else}${if_match ${memperc}<80}
+    ]] .. _h.value('${memperc}%',ci.degraded) .. [[
+${else}${if_match ${memperc}>=80}
+    ]] .. _h.value('${memperc}%', ci.bad) .. [[
 ${endif}${endif}${endif}
 ]]
 
