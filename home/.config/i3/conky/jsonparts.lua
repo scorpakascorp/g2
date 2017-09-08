@@ -79,12 +79,12 @@ parts.machine = _h.common('', nil, machine)
 -- Media Player Daemon
 parts.mpd = [[
 ${if_mpd_playing} 
-]] .. _h.icon('') .. [[,
+]] .. _h.icon('') .. [[,
     {"full_text":"${mpd_artist 20}", "color" : "\#545454", 
      "separator" : false, "separator_block_width":3 },
     {"full_text":" - ", "color" : "\#909737", 
      "separator" : false, "separator_block_width":3 },
-    {"full_text":"${mpd_title 30}", "color" : "\#5c5dad", 
+    {"full_text":"${mpd_title 60}", "color" : "\#5c5dad", 
      "separator" : false, "separator_block_width":6 }
 ${else} 
     {"full_text":"", "color":"\#c92525", 

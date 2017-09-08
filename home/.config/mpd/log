@@ -1,0 +1,64 @@
+Sep 08 20:18 : exception: Failed to open /home/scorp/.config/mpd/state: No such file or directory
+Sep 08 20:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 08 20:18 : exception: Failed to access /home/scorp/Music: No such file or directory
+Sep 08 20:20 : client: [0] opened from [::1]:57790
+Sep 08 20:20 : client: [0] closed
+Sep 08 20:23 : client: [1] opened from [::1]:57844
+Sep 08 20:23 : client: [1] closed
+Sep 08 20:23 : client: [2] opened from [::1]:57846
+Sep 08 20:25 : client: [2] closed
+Sep 08 20:26 : client: [3] opened from [::1]:57874
+Sep 08 20:27 : client: [3] closed
+Sep 08 20:27 : client: [4] opened from [::1]:57880
+Sep 08 20:27 : exception: Failed to open /home/scorp/.config/mpd/playlists/difm.m3u.m3u: No such file or directory
+Sep 08 20:27 : client: [5] opened from [::1]:57894
+Sep 08 20:27 : client: [4] closed
+Sep 08 20:27 : client: [6] opened from [::1]:57898
+Sep 08 20:27 : client: [5] closed
+Sep 08 20:28 : client: [7] opened from [::1]:57902
+Sep 08 20:28 : client: [6] closed
+Sep 08 20:28 : client: [7] closed
+Sep 08 20:28 : client: [8] opened from [::1]:57906
+Sep 08 20:28 : client: [8] closed
+Sep 08 20:31 : player: played "http://goo.gl/R6GyBL"
+Sep 08 20:32 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 08 20:32 : client: [0] opened from [::1]:57940
+Sep 08 20:32 : exception: Not seekable
+Sep 08 20:32 : player: played "http://goo.gl/t5cs3i"
+Sep 08 20:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 08 20:34 : client: [0] opened from [::1]:49942
+Sep 08 20:34 : client: [1] opened from [::1]:49946
+Sep 08 20:34 : client: [0] closed
+Sep 08 20:34 : client: [2] opened from [::1]:49950
+Sep 08 20:34 : client: [1] closed
+Sep 08 20:36 : player: played "http://goo.gl/R6GyBL"
+Sep 08 20:41 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 08 20:41 : client: [0] opened from [::1]:51154
+Sep 08 20:41 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 08 20:41 : exception: Not seekable
+Sep 08 20:41 : client: [1] opened from [::1]:51158
+Sep 08 20:41 : client: [0] closed
+Sep 08 20:41 : client: [2] opened from [::1]:51162
+Sep 08 20:41 : client: [1] closed
+Sep 08 20:41 : client: [2] closed
+Sep 08 20:41 : client: [3] opened from [::1]:51166
+Sep 08 20:42 : client: [4] opened from [::1]:51170
+Sep 08 20:42 : client: [3] closed
+Sep 08 20:42 : client: [5] opened from [::1]:51174
+Sep 08 20:42 : client: [4] closed
+Sep 08 20:43 : client: [5] closed
+Sep 08 20:45 : client: [6] opened from [::1]:51194
+Sep 08 20:45 : client: [6] closed
+Sep 08 20:45 : client: [7] opened from 127.0.0.1:50628
+Sep 08 20:45 : client: [8] opened from [::1]:51198
+Sep 08 20:45 : client: [9] opened from 127.0.0.1:50632
+Sep 08 20:45 : client: [8] closed
+Sep 08 20:45 : client: [7] closed
+Sep 08 20:47 : client: [9] closed
+Sep 08 20:47 : client: [10] opened from [::1]:51306
+Sep 08 20:47 : client: [11] opened from 127.0.0.1:50740
+Sep 08 20:47 : client: [10] closed
+Sep 08 20:48 : client: [11] closed
+Sep 08 20:48 : client: [12] opened from [::1]:51314
+Sep 08 20:48 : client: [13] opened from 127.0.0.1:50748
+Sep 08 20:48 : client: [12] closed
