@@ -15,6 +15,8 @@ bindsym $mod+d exec rofi -show drun -lines 10 -font "Ubuntu Mono 12" -hide-scrol
 # list open windows to switch to
 bindsym $mod+Tab exec rofi -show window -lines 10 -font "Ubuntu Mono 12" -hide-scrollbar -width -80
 
+bindsym $mod+Shift+a exec notify-send -u critical "$(xsel -o | /usr/local/bin/trans -b )"
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -190,8 +192,8 @@ new_float pixel 1
 new_window pixel 1
 
 bindsym XF86AudioMute        exec --no-startup-id "amixer -q set Master toggle"
-bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -q set Master 5%+ unmute"
-bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -q set Master 5%- unmute"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -q set Master 2%+ unmute"
+bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -q set Master 2%- unmute"
 
 
 
